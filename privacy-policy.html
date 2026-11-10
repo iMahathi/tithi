@@ -101,7 +101,7 @@
     <ul>
       <li>You don’t need an account, and we never ask you to sign in.</li>
       <li>Your birth details, notes, japa counts, reminders and settings are kept on your phone. They are not sent to us.</li>
-      <li>Panchangam, festival and horoscope data is built into the app. Videos, live darshan, radio and gold prices need the internet.</li>
+      <li>Panchangam, festival and horoscope data is built into the app. Videos, bhajans, live darshan, gold prices and currency rates need the internet.</li>
       <li>There are no ads, no analytics and no tracking. We don’t sell your data.</li>
       <li>The app doesn’t use your location, contacts, camera, microphone or photos.</li>
     </ul>
@@ -138,37 +138,17 @@
   <p>Some features fetch content from the internet. When they do, the server that answers sees your device’s IP address, as any website would. This is what each feature sends:</p>
 
   <div class="card">
-    <h3>Videos, live darshan and bhakti audio</h3>
+    <h3>Videos, bhajans and live darshan</h3>
     <dl>
       <dt>Sent to</dt>
       <dd>YouTube (Google)</dd>
       <dt>What is sent</dt>
-      <dd>A request for the video or audio you chose. Thumbnails are loaded from YouTube’s image servers. If you turn off <em>Settings › Playback</em>, videos and songs open in the YouTube app instead.</dd>
+      <dd>A request for the video you chose. Videos play in YouTube’s official player, and thumbnails are loaded from YouTube’s image servers. If you turn off <em>Settings › Advanced settings › Play YouTube videos in the app</em>, they open in the YouTube app instead.</dd>
     </dl>
   </div>
 
   <div class="card">
-    <h3>Live TV and radio</h3>
-    <dl>
-      <dt>Sent to</dt>
-      <dd>The servers of the broadcaster or streaming service that carries the channel</dd>
-      <dt>What is sent</dt>
-      <dd>A request for the stream you chose. Nothing about you is added.</dd>
-    </dl>
-  </div>
-
-  <div class="card">
-    <h3>The “More services” screens</h3>
-    <dl>
-      <dt>Sent to</dt>
-      <dd>The content server at <code>app.ibharat.io</code>. These screens include the older horoscope, devotional, TV, radio, cricket, jobs and gold-rate screens.</dd>
-      <dt>What is sent</dt>
-      <dd>The city, language, rashi or date you picked on that screen. For cricket predictions, the <a href="#install-id">random install ID</a> is also sent, so that your own predictions can be shown back to you.</dd>
-    </dl>
-  </div>
-
-  <div class="card">
-    <h3>Gold and silver spot price</h3>
+    <h3>Gold, silver and currency rates</h3>
     <dl>
       <dt>Sent to</dt>
       <dd>Public exchange-rate files at <code>currency-api.pages.dev</code> and <code>cdn.jsdelivr.net</code></dd>
@@ -201,7 +181,7 @@
 
   <h2 id="install-id">3. The random install ID</h2>
   <p>When you first open Tithi, the app creates a random code and stores it on your phone. It is not linked to your name, phone number, Google account or advertising ID, and we don’t use the advertising ID at all.</p>
-  <p>It is used for only two things: showing your cricket predictions back to you, and limiting how many AI Jyotishi questions one phone can ask each day. Clearing the app’s storage or reinstalling the app creates a new one.</p>
+  <p>It is used for only one thing: limiting how many AI Jyotishi questions one phone can ask each day, in versions of the app where that feature is turned on. Clearing the app’s storage or reinstalling the app creates a new one.</p>
 
   <h2 id="dont">4. What we don’t do</h2>
   <ul>
@@ -218,10 +198,9 @@
       <tr><th scope="col">Permission</th><th scope="col">Why the app asks for it</th></tr>
     </thead>
     <tbody>
-      <tr><td>Notifications</td><td>For the alerts you turn on: the daily rashifal, panchangam, Rahu kalam, festival and puja reminders, and the controls for audio that is playing.</td></tr>
+      <tr><td>Notifications</td><td>For the alerts you turn on: the daily rashifal, panchangam, Rahu kalam, sloka, festival and puja reminders.</td></tr>
       <tr><td>Alarms and reminders</td><td>So that timed alerts, such as Rahu kalam and the puja reminder, arrive on time.</td></tr>
       <tr><td>Run at startup</td><td>To set your puja reminder again after the phone restarts.</td></tr>
-      <tr><td>Media playback in the background</td><td>To keep bhakti audio and radio playing while you use other apps.</td></tr>
       <tr><td>Internet and network state</td><td>To download the content described in section 2.</td></tr>
     </tbody>
   </table>
@@ -233,7 +212,7 @@
     <li><strong>YouTube:</strong> Tithi uses YouTube API Services to play videos. By watching them you agree to the <a href="https://www.youtube.com/t/terms" rel="noopener">YouTube Terms of Service</a>, and the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> applies.</li>
     <li><strong>Anthropic</strong> (AI Jyotishi answers): the <a href="https://www.anthropic.com/legal/privacy" rel="noopener">Anthropic Privacy Policy</a> applies.</li>
     <li><strong>Google Play and Android</strong> (installing, updating and backing up the app): the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> applies.</li>
-    <li><strong>The content server, broadcasters and websites</strong> listed in section 2 apply their own policies to the requests they receive.</li>
+    <li><strong>The exchange-rate files and websites</strong> listed in section 2 apply their own policies to the requests they receive.</li>
   </ul>
 
   <h2 id="retention">7. Keeping and deleting data</h2>
@@ -248,7 +227,7 @@
   <p>Tithi is meant for adults and is not directed at children under 13. We don’t knowingly collect personal information from children. If you believe a child has sent us personal information, email us and we will delete it.</p>
 
   <h2 id="security">9. Security</h2>
-  <p>The app downloads content over encrypted HTTPS wherever the source offers it. Some radio and TV broadcasters offer their streams only over plain HTTP. The app sends no personal information with those requests. Your entries on the phone are protected by Android’s app storage, which other apps cannot read.</p>
+  <p>The app connects to the internet only over encrypted HTTPS. Your entries on the phone are protected by Android’s app storage, which other apps cannot read.</p>
 
   <h2 id="changes">10. Changes to this policy</h2>
   <p>If we change how the app handles information, we will update this page and the effective date at the top.</p>
